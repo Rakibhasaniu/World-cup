@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto:wght@300&display=swap');
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ .container{
+    height: 806px;
+}
+/*----------- BANNER STYLE-------------- */
+.banner{ 
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+     background-color: #161616;
+     border-radius: 30px;
+     margin-top: 50px;
+     margin-bottom: 50px;
+     margin-left: 200px;
+}
+.banner-img{
+    width: 450px;
+    height: 630px;
+    margin-top: 20px;
+}
+
+.half-width{
+    width: 50%;
+    padding-left: 140px;
+}
+.half-width h1 {
+    color: #FFFFFF;
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: 700;
+}
+.half-width p{
+    margin-top: 15px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+.half-width button{
+    color:  #FFFFFF;
+    background-color: #DD0000;
+    width: 178px;
+    height: 56px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 20px;
+}
+/*----------------------------
+                           ANIMATION STYLE
+                                             ------------------------- */
+ .half-width img:hover {
+    transform: scale(1.3);
+    z-index: 2;
+ }
+/*-------------- TRANSFER SECTION STYLE -------------*/
+.left-btn-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 312px;
+    height: 312px;
+    background-color: black;
+    border-radius: 10px;
+    margin-right: 25px;
+}
+.left-btn{
+    margin: 10px;
+    width: 200px;
+    height: 64px;
+    border-radius: 10px;
+    font-size: 20px;
+    
+}
+.left-btn a{
+    text-decoration: none;
+    color: black;
+}
+.red{
+    background-color: red;
+    color: whitesmoke;
+    font-weight: 700;
+}
+.transfer{
+    display: flex;
+    width: 75%;
+    margin-left: 200px;
+}
+.transfer-btn{
+    padding: 5px 10px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.blog-item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.blog-info{
+    margin-left: 15px;
+}
+.blog-info h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.blog-info p{
+    margin-bottom: 10px;
+}
+.player{
+    border: 1px solid rgb(224, 221, 221);
+    border-radius: 10px;
+}
+.player img{
+    width: 100%;
+}
+.fa-clock{
+    padding: 8px;
+}
+.fa-comment-dots{
+    padding: 8px;
+}
+.clock-icon{
+    margin-right: 40px;
+    color: #161616B2;
+}
+.sms-icon{
+    color: #161616B2;
+}
+.view-btn {
+    width: 264px;
+    height: 64px;
+    background: #DD0000;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 300px;
+    display: none;
+    margin-top: 50px;
+}
+/* -----------------FOOTER--------- ---
+---------------------------------------*/
+footer{
+    margin-top: 50px;
+    width: 100%;
+    height: 444px;
+    background-color: #161616;
+}
+footer h1{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    padding-top: 130px;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+hr{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 75%;
+    margin-left: 13%;
+}
+.footer-item{
+    margin-top: 50px;
+    text-align: center;
+    /* width: 75%; */
+}
+.footer-item a{
+    text-decoration: none;
+    color: #B9B9B9;
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+/*------------------- SOCIAL INFO STYLE ----------*/
+.social-info{
+    margin-top: 50px;
+    text-align: center;
+
+}
+.social-info a{
+    margin-left: 60px;
+    color: #B9B9B9;
+}
+
+/* ----------------------WEBSITE2 STYLE -
+-------------------------------------------------*/
+.flag {
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: flex-end; */
+    margin-top: 55px;
+}
+
+.match {
+    width: 312px;
+    height: 242px;
+    border: 1px solid rgb(224, 221, 221);
+    border-radius: 10px;
+}
+
+.country {
+    text-align: center;
+    margin-top: 30px;
+}
+/* .match-title{
+    font-weight: 700;
+} */
+.date{
+font-weight: 700;
+font-size: 13px;
+margin-top: 10px;
+}
+/*-------------------
+       RESPONSIVE
+-------------------*/
+@media only screen and (max-width:688px) {
+.container{
+    width: 100%;
+}
+
+.banner{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+}
+.banner-img{
+    width: 100%;
+}
+
+.transfer{
+    width: 100%;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.transfer-btn{
+    margin-top: 10px;
+}
+.blog-item{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+footer{
+    width: 100%;
+    height: 75%;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+}
+.footer-item a{
+    margin-bottom: 15px;
+}
+.left-btn-section{
+    background-color: white;
+    margin-left: 80px;
+}
+.match{
+    margin-left: 80px;
+}
+
+}
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .last{
+        display: none;
+    }
+    .banner{
+        width: 100%;
+        margin: 0px;
+    }
+    .half-width{
+     padding: 10px;
+    }
+   .banner-img{
+    margin: 0px;
+   }
+    .transfer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        margin: 0px;
+    }
+    
+    .blog-item{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-item a{
+        font-size: 15px;
+    }
+    .half-width img{
+       height: auto; 
+
+    }
+    .half-width button{
+        margin-bottom: 30px;
+    }
+    .left-btn-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    height: 200px;
+    background-color:white;
+    border-radius: 10px;
+    margin-right: 25px;
+    }
+    .view-btn{
+        display: block;
+    }
+    .transfer-btn{
+        margin-top: 10px;
+    }
+}
